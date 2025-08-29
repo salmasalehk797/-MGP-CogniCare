@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CogniCare</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logo_description">Logo</string>
+    <string name="toast_icon_content_description">Toast icon</string>
+</resources>

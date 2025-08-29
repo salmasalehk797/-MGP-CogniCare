@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/hint_text_color"
+            android:paddingBottom="12dp" />
+
+        <!-- Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Birthdate -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthdateTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthdate"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthdateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Number of Siblings -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numSiblingsTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Siblings"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numSiblingsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Number of Children -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numChildrenTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Children"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numChildrenEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Number of Grandchildren -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numGrandchildrenTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Grandchildren"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numGrandchildrenEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Mother's Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/motherNameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mother's Name"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/motherNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Father's Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fatherNameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father's Name"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fatherNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- High School Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/highschoolTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="High School's Name"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/highschoolNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Favorite Color -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/favoriteColorTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Favorite Color"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/favoriteColorEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Current Location -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/currentLocationTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Location"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/currentLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Caretaker Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp"
+            android:text="Caretaker's Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/hint_text_color" />
+
+        <!-- Caretaker Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/caretakerFullNameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Caretaker's Full Name"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/caretakerFullNamEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/confirmButton"
+            style="@style/MainButtonStyle"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp" />
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/MainButtonStyle"
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

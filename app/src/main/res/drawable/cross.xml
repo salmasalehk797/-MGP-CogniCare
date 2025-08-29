@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FF0000">
+    <path
+        android:fillType="evenOdd"
+        android:name="cross"
+        android:pathData="M16.19,5.83L14.76,4.4C14.4,-0.14 12.47,-0.14 12.11,4.4L9.81,5.83C7.08,8.01 7.08,12.02 9.81,14.19L12.11,15.62C12.47,20.86 14.4,20.86 14.76,15.62L16.19,14.19C19.92,11.97 19.92,7.96 16.19,5.83ZM12,19.5C10.34,19.5 9,18.16 9,16.5C9,14.84 10.34,13.5 12,13.5C13.66,13.5 15,14.84 15,16.5C15,18.16 13.66,19.5 12,19.5Z" />
+</vector>

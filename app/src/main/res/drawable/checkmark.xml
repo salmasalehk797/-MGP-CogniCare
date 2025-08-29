@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#008000">
+    <path
+        android:fillType="evenOdd"
+        android:name="checkmark"
+        android:pathData="M7.41,8.58L5.86,10.13L10.44,15.75L11.89,14.3L7.41,8.58ZM12,2L1,21H23L12,2Z" />
+</vector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lines">2</item> <!-- allow 2 lines -->
+        <item name="android:gravity">center</item> <!-- center text -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">#102081</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="BackuttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lines">2</item> <!-- allow 2 lines -->
+        <item name="android:gravity">center</item> <!-- center text -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">#1D418A</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="FormTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="FormTextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

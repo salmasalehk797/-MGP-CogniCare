@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PairingGameActivity">
+
+    <!-- Moves -->
+    <TextView
+        android:id="@+id/movesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lives: 5"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Task -->
+    <TextView
+        android:id="@+id/taskTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Task: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/movesTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Grid of pairing buttons -->
+    <GridLayout
+        android:id="@+id/gridLayoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/taskTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bckbutton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- All buttons have same style -->
+        <Button
+            android:id="@+id/button1"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/MainButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="invisible"
+            android:text=""
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp" />
+    </GridLayout>
+
+    <!-- Instructions Overlay (covers everything except Back button, centered properly) -->
+    <FrameLayout
+        android:id="@+id/instructions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#AA000000"
+        android:visibility="visible"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bckbutton">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Welcome to the Word Matching Game!\n\n◉ Match words together.\n\n◉ Words can be in the same category or fit together to do something.\n\n◉ You have 5 moves!"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                style="@style/MainButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK, Let's Go!" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Back button at bottom -->
+    <Button
+        android:id="@+id/bckbutton"
+        style="@style/BackuttonStyle"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

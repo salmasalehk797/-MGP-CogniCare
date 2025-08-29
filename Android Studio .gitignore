@@ -1,0 +1,37 @@
+# Gradle files
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# Local configuration
+local.properties
+*.iml
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# Mac OS
+.DS_Store
+
+# Log files
+*.log
+
+# APK / AAB files
+*.apk
+*.ap_
+*.aab
+
+# Kotlin/Java specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Misc
+*.tmp
+*.swp
+*.swo

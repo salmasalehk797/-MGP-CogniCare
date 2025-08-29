@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground"
+    tools:context=".PersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Card container for profile info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Back button at top-right -->
+                <Button
+                    android:id="@+id/backbutton"
+                    style="@style/BackuttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Info list below edit button -->
+                <LinearLayout
+                    android:id="@+id/infoContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/backbutton"
+                    android:divider="?android:attr/dividerVertical"
+                    android:showDividers="middle"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/fullNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/ageTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/numSiblingsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Siblings:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/motherNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mother's Name:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/fatherNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Father's Name:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/highschoolNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="High School's Name:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/favoriteColorTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Favorite Color:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/birthdateTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birth Date:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/numChildrenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Children:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/numGrandchildrenTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Grandchildren:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/currentLocationTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Current Residence:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/caretakerNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Caretaker's Name:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Caretaker's Email:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:paddingVertical="8dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <Button
+                android:id="@+id/editButton"
+                style="@style/MainButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
